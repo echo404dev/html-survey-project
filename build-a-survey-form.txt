@@ -1,0 +1,44 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body><h1 id="title">Personal Growth Check-In</h1>
+  <p id="description">Take a moment to check in with yourself — no pressure, just curiosity.</p>
+  <form id="survey-form">
+  <label id="name-label" for="name">Name</label>
+  <input type="text" id="name" placeholder="Enter your name" required>
+
+  <label id="email-label" for="email">Email</label>
+  <input type="email" id="email" placeholder="Enter your email" required>
+
+  <label id="number-label" for="number">Age</label>
+  <input type="number" id="number" placeholder="Enter a number" min="13" max="120">
+
+  <label for="dropdown">How are you feeling today?</label>
+  <select id="dropdown">
+    <option value="motivated">Motivated</option>
+    <option value="meh">Kinda meh</option>
+  </select>
+
+  <p>Have you practiced self-care this week?</p>
+  <label><input type="radio" name="selfcare" value="yes"> Yes</label>
+  <label><input type="radio" name="selfcare" value="no"> No</label>
+
+  <p>What habits are you building?</p>
+  <label><input type="checkbox" name="habit" value="reading"> Reading</label>
+  <label><input type="checkbox" name="habit" value="exercise"> Exercise</label><br><br>
+
+  <label for="comments">Any reflections or thoughts?</label><br>
+  <textarea id="comments" placeholder="Write your thoughts here..."></textarea>
+
+  <input type="submit" id="submit" value="Submit">
+</form>
+</html>
+
+** end of index.html **
+
